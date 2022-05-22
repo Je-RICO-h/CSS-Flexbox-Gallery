@@ -1,0 +1,146 @@
+html{
+ box-sizing: border-box;
+}
+
+*:before,
+*:after{
+ box-sizing: inherit;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body{
+  background: #fff url("yosemite.jpg") center no-repeat fixed;
+  background-size: cover;
+}
+
+header{
+  display: block;
+  padding: 0 0 2% 0;
+  width: 80%;
+  margin: auto;
+  background-image: linear-gradient(to bottom, rgba(150,150,150,0.3),rgba(180,180,180,0.4));
+  background-size: cover;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  border-radius: 3%;
+  box-shadow: 10px 10px 100px rgb(200,200,200);
+}
+
+header h1{
+  margin: 0 0 5% 0;
+  padding-top : 2%;
+  text-shadow: -1px 0px 2px black,0 1px 2px black,1px 0px 2px black, 0px 1px 2px black, 10px 10px 10px black;
+  font-family: Constantia;
+}
+
+header p{
+  text-align: left;
+  font-size: 1.2em;
+  margin: 0 0 0 5%;
+  text-decoration : underline;
+  text-shadow: 4px 5px 5px black;
+  font-family: Times;
+}
+
+.test{
+  background-color: blue;
+  height: 300px;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.row{
+  margin: 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+.line{
+  flex: 20%;
+  max-width: 20%;
+  padding: 5px;
+}
+
+@media (max-width: 900px)
+{
+    header{
+      margin-bottom: 5%;
+    }
+    
+   header h1{
+     font-size: 1.5em;
+     margin-bottom: 10%;
+   }
+   
+   header p{
+     font-size: 1em;
+   }
+   
+  .row{
+    width: 90%;
+    margin: auto;
+  }
+
+  .line{
+   flex: 40%;
+   max-width: 40%;
+   margin: 0%;
+  }
+}
+
+footer{
+  width: 100%;
+  background-color: rgba(171,171,171,0.20);
+  font-size: 1.2em;
+  color: white;
+  padding: 5px;
+  font-family: "Times New Roman"; 
+}
+
+@media (max-width: 650px)
+{
+   header{
+     width: 100%;
+   }
+
+   header h1{
+     font-size: 1.5em;
+   }
+   
+   header p{
+     font-size: 0.8em;
+   }
+
+  .line{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-track{
+  background-color: rgba(162,162,162,0.2);
+  border-radius : 10px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(151,151,151,1.00);
+  border-radius : 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(110,110,110,1.00);
+}
